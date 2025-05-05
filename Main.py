@@ -8,15 +8,15 @@ Program Description: This program takes an equation in prefix form and converts 
 an equivalent postfix form equation. 
 '''
 def is_operator(char):
-    """Check if the character is an operator."""
+    """This checks if the character is an operator."""
     return char in ['+', '-', '*', '/', '^']
 
 def is_operand(char):
-    """Check if the character is an operand (variable or number)."""
+    """This checks if the character is an operand (variable or number)."""
     return char.isalnum()
 
 def prefix_to_postfix(expression):
-    """Convert prefix expression to postfix expression."""
+    """This converts the prefix expression to postfix expression."""
     # Remove spaces from the expression
     expression = expression.replace(" ", "")
     
@@ -59,10 +59,10 @@ def main():
     print("Enter prefix expressions with variables (x, y, z), numbers, and operations (+, -, *, /, ^)")
     print("Example: ^-xy2 will be converted to xy-2^")
     
-    # Get user input
+    # This takes the user input
     prefix_expr = input("Enter a prefix expression: ")
     
-    # Convert and display result
+    # This converts the input by calling the function and displays result
     postfix_expr = prefix_to_postfix(prefix_expr)
     print(f"Postfix expression: {postfix_expr}")
 
