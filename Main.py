@@ -1,3 +1,12 @@
+'''
+Name: Nischay Rawal
+Date: 05/05/2025
+Date Modified: 05/05/2025
+Lab: Tuesday 8am Lab 11
+Collaborators: None
+Program Description: This program takes an equation in prefix form and converts the input prefix form into
+an equivalent postfix form equation. 
+'''
 def is_operator(char):
     """Check if the character is an operator."""
     return char in ['+', '-', '*', '/', '^']
